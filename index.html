@@ -14,287 +14,191 @@
 
 * {
 
-    margin: 0;
+  margin: 0;
 
-    padding: 0;
+  padding: 0;
 
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-}
-
-html {
-
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 
 }
 
 body {
 
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 
-    background: #f4f7fb;
+  background: #f4f7fb;
 
-    color: #263445;
+  color: #263445;
 
 }
 
-/* KREU */
-
 header {
 
-    background: #12345a;
+  background: #075b91;
 
-    color: white;
+  color: white;
 
-    text-align: center;
+  padding: 25px 15px;
 
-    padding: 35px 15px;
+  text-align: center;
 
 }
 
 header h1 {
 
-    font-size: 40px;
+  font-size: 30px;
 
-    margin-bottom: 10px;
-
-}
-
-header p {
-
-    font-size: 18px;
+  margin-bottom: 8px;
 
 }
-
-/* MENUJA */
 
 nav {
 
-    background: #087eaa;
+  background: #06436d;
 
-    padding: 18px 10px;
+  display: flex;
 
-    text-align: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 25px;
+
+  padding: 16px;
 
 }
 
 nav a {
 
-    display: inline-block;
+  color: white;
 
-    color: white;
+  text-decoration: none;
 
-    text-decoration: none;
-
-    margin: 8px 15px;
-
-    font-weight: bold;
+  font-weight: bold;
 
 }
 
 nav a:hover {
 
-    color: #ffdf75;
+  color: #ffd166;
 
 }
-
-/* PJESA KRYESORE */
-
-.hero {
-
-    background: linear-gradient(135deg, #dceefa, #ffffff);
-
-    text-align: center;
-
-    padding: 85px 20px;
-
-}
-
-.hero h2 {
-
-    color: #12345a;
-
-    font-size: 36px;
-
-    margin-bottom: 20px;
-
-}
-
-.hero p {
-
-    font-size: 19px;
-
-    line-height: 1.7;
-
-}
-
-/* SEKSIONET */
 
 section {
 
-    padding: 55px 8%;
+  max-width: 1100px;
 
-    text-align: center;
+  margin: 35px auto;
 
-}
+  padding: 30px;
 
-section h2 {
+  background: white;
 
-    color: #12345a;
+  border-radius: 12px;
 
-    font-size: 29px;
-
-    margin-bottom: 22px;
+  box-shadow: 0 3px 12px #00000012;
 
 }
 
-section p {
+h2 {
 
-    font-size: 17px;
+  color: #075b91;
 
-    line-height: 1.8;
-
-}
-
-/* KARTAT */
-
-.cards {
-
-    display: flex;
-
-    justify-content: center;
-
-    flex-wrap: wrap;
-
-    gap: 22px;
-
-    margin-top: 30px;
+  margin-bottom: 18px;
 
 }
 
-.card {
+p {
 
-    background: white;
-
-    padding: 30px;
-
-    border-radius: 12px;
-
-    width: 270px;
-
-    box-shadow: 0 4px 15px #00000015;
+  line-height: 1.8;
 
 }
 
-.card h3 {
+.gallery {
 
-    color: #087eaa;
+  display: grid;
 
-    margin-bottom: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 
-}
-
-.card p {
-
-    font-size: 16px;
+  gap: 18px;
 
 }
 
-/* AKTIVITETET */
+.gallery img {
 
-#aktivitetet {
+  width: 100%;
 
-    background: #eaf3fa;
+  height: 220px;
 
-}
+  object-fit: cover;
 
-/* PROJEKTET */
-
-#projektet {
-
-    background: white;
+  border-radius: 10px;
 
 }
 
-/* GALERIA */
+.item {
 
-#galeria {
+  background: #eef5fa;
 
-    background: #eaf3fa;
+  padding: 18px;
 
-}
+  border-radius: 10px;
 
-/* KONTAKTI BLU */
-
-#kontakt {
-
-    background: #087eaa;
-
-    color: white;
-
-    padding: 65px 20px;
+  margin: 12px 0;
 
 }
 
-#kontakt h2,
+.contact {
 
-#kontakt h3,
+  background: #087eaa;
 
-#kontakt p {
-
-    color: white;
+  color: white;
 
 }
 
-#kontakt h3 {
+.contact h2 {
 
-    font-size: 25px;
-
-    margin-bottom: 15px;
+  color: white;
 
 }
-
-/* FUNDI */
 
 footer {
 
-    background: #12345a;
+  background: #06436d;
 
-    color: white;
+  color: white;
 
-    text-align: center;
+  text-align: center;
 
-    padding: 25px;
+  padding: 20px;
+
+  margin-top: 30px;
 
 }
 
-/* TELEFONI */
+@media(max-width:600px) {
 
-@media(max-width: 600px) {
+  header h1 {
 
-    header h1 {
+    font-size: 23px;
 
-        font-size: 30px;
+  }
 
-    }
+  nav {
 
-    nav a {
+    gap: 15px;
 
-        margin: 8px;
+  }
 
-    }
+  section {
 
-    .hero h2 {
+    margin: 18px 10px;
 
-        font-size: 28px;
+    padding: 20px;
 
-    }
-
-    section {
-
-        padding: 40px 6%;
-
-    }
+  }
 
 }
 
@@ -306,113 +210,109 @@ footer {
 
 <header>
 
-    <h1>SHQK</h1>
+  <h1>SHKOLLA QENDËR KOMUNITARE</h1>
 
-    <p>Shkolla Qendër Komunitare</p>
+  <p>Shkolla "Fiqiri Dine" - Maqellarë</p>
 
 </header>
 
 <nav>
 
-    <a href="#rethnesh">Rreth nesh</a>
+  <a href="#rreth">Rreth nesh</a>
 
-    <a href="#aktivitetet">Aktivitetet</a>
+  <a href="#aktivitetet">Aktivitetet</a>
 
-    <a href="#projektet">Projektet</a>
+  <a href="#projektet">Projektet</a>
 
-    <a href="#galeria">Galeria</a>
+  <a href="#galeria">Galeria</a>
 
-    <a href="#kontakt">Kontakt</a>
+  <a href="#kontakt">Kontakt</a>
 
 </nav>
 
-<div class="hero">
+<section id="rreth">
 
-    <h2>Mirë se vini në SHQK!</h2>
+  <h2>Rreth nesh</h2>
 
-    <p>Një hapësirë për dije, zhvillim, bashkëpunim dhe komunitet.</p>
+  <p>
 
-</div>
+    Mirë se vini në faqen zyrtare të Shkollës Qendër Komunitare.
 
-<section id="rethnesh">
+    Shkolla "Fiqiri Dine" synon të krijojë një mjedis gjithëpërfshirës,
 
-    <h2>Rreth nesh</h2>
+    edukues dhe bashkëpunues për nxënësit, prindërit dhe komunitetin.
 
-    <p>
-
-        SHQK është një hapësirë që synon të promovojë
-
-        edukimin, përfshirjen, zhvillimin personal
-
-        dhe bashkëpunimin me komunitetin.
-
-    </p>
+  </p>
 
 </section>
 
 <section id="aktivitetet">
 
-    <h2>Aktivitetet tona</h2>
+  <h2>Aktivitetet</h2>
 
-    <div class="cards">
+  <div class="item">
 
-        <div class="card">
+    <h3>Aktivitete edukative</h3>
 
-            <h3>Aktivitete edukative</h3>
+    <p>Aktivitete që nxisin kreativitetin dhe bashkëpunimin.</p>
 
-            <p>Veprimtari që mbështesin dijen dhe të nxënit.</p>
+  </div>
 
-        </div>
+  <div class="item">
 
-        <div class="card">
+    <h3>Aktivitete sportive</h3>
 
-            <h3>Aktivitete kulturore</h3>
+    <p>Promovimi i shëndetit dhe jetesës aktive.</p>
 
-            <p>Promovimi i kulturës, traditës dhe krijimtarisë.</p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>Aktivitete komunitare</h3>
-
-            <p>Bashkëpunim dhe angazhim në komunitet.</p>
-
-        </div>
-
-    </div>
+  </div>
 
 </section>
 
 <section id="projektet">
 
-    <h2>Projektet</h2>
+  <h2>Projektet</h2>
 
-    <p>Këtu do të prezantohen projektet dhe nismat tona.</p>
+  <div class="item">
+
+    <h3>Projektet e nxënësve</h3>
+
+    <p>Këtu do të publikohen projektet dhe punimet e nxënësve.</p>
+
+  </div>
 
 </section>
 
 <section id="galeria">
 
-    <h2>Galeria</h2>
+  <h2>Galeria e fotove</h2>
 
-    <p>Këtu do të publikohen fotografitë nga aktivitetet e SHQK-së.</p>
+  <div class="gallery">
+
+    <img
+
+      src="https://drive.google.com/uc?export=view&id=1ZvaMYwpGE4Om1JgllDxh7XcxRYT2sK3_"
+
+      alt="Foto e SHQK">
+
+  </div>
 
 </section>
 
-<section id="kontakt">
+<section id="kontakt" class="contact">
 
-    <h2>Kontakt</h2>
+  <h2>Kontakt</h2>
 
-    <h3>Shkolla "Fiqiri Dine"</h3>
+  <p>Shkolla "Fiqiri Dine" - Maqellarë</p>
 
-    <p>Shkolla Qendër Komunitare</p>
+  <p>SHQK - Shkolla Qendër Komunitare</p>
 
 </section>
 
 <footer>
 
-    <p>© 2026 SHQK - Shkolla Qendër Komunitare</p>
+  <p>© 2026 SHQK - Shkolla "Fiqiri Dine"</p>
+
+  <p>Administrimi: Erald Sela</p>
 
 </footer>
 
