@@ -8,201 +8,293 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SHQK - Gjimnazi Fiqiri Dine</title>
+<title>SHQK - Shkolla Qendër Komunitare</title>
 
 <style>
 
 * {
 
-  margin: 0;
+    margin: 0;
 
-  padding: 0;
+    padding: 0;
 
-  box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
 
 }
 
 body {
 
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 
-  background: #f4f6f9;
+    background: #f4f7fb;
 
-  color: #26364a;
+    color: #263445;
 
 }
 
+/* KREU */
+
 header {
 
-  background: #102c4e;
+    background: #12345a;
 
-  color: white;
+    color: white;
 
-  text-align: center;
+    text-align: center;
 
-  padding: 35px 15px;
+    padding: 35px 15px;
 
 }
 
 header h1 {
 
-  font-size: 46px;
+    font-size: 40px;
 
-  letter-spacing: 4px;
-
-}
-
-header h2 {
-
-  font-size: 22px;
-
-  font-weight: normal;
-
-  margin-top: 10px;
+    margin-bottom: 10px;
 
 }
 
 header p {
 
-  margin-top: 8px;
-
-  color: #d5e2ef;
+    font-size: 18px;
 
 }
 
+/* MENUJA */
+
 nav {
 
-  background: #087e8b;
+    background: #087eaa;
 
-  padding: 18px;
+    padding: 18px 10px;
 
-  text-align: center;
+    text-align: center;
 
 }
 
 nav a {
 
-  color: white;
+    display: inline-block;
 
-  text-decoration: none;
+    color: white;
 
-  margin: 10px 15px;
+    text-decoration: none;
 
-  font-weight: bold;
+    margin: 8px 15px;
+
+    font-weight: bold;
 
 }
 
 nav a:hover {
 
-  color: #ffe29a;
+    color: #ffdf75;
 
 }
 
-main {
+/* PJESA KRYESORE */
 
-  max-width: 1100px;
+.hero {
 
-  margin: 45px auto;
+    background: linear-gradient(135deg, #dceefa, #ffffff);
 
-  padding: 20px;
+    text-align: center;
 
-}
-
-.about {
-
-  background: white;
-
-  padding: 45px;
-
-  border-radius: 12px;
-
-  box-shadow: 0 3px 15px #00000012;
+    padding: 85px 20px;
 
 }
 
-.about h2 {
+.hero h2 {
 
-  color: #102c4e;
+    color: #12345a;
 
-  font-size: 32px;
+    font-size: 36px;
 
-  margin-bottom: 22px;
-
-  border-bottom: 3px solid #087e8b;
-
-  padding-bottom: 12px;
+    margin-bottom: 20px;
 
 }
 
-.about p {
+.hero p {
 
-  font-size: 18px;
+    font-size: 19px;
 
-  line-height: 1.8;
-
-  margin-bottom: 15px;
+    line-height: 1.7;
 
 }
+
+/* SEKSIONET */
+
+section {
+
+    padding: 55px 8%;
+
+    text-align: center;
+
+}
+
+section h2 {
+
+    color: #12345a;
+
+    font-size: 29px;
+
+    margin-bottom: 22px;
+
+}
+
+section p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+/* KARTAT */
 
 .cards {
 
-  display: grid;
+    display: flex;
 
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    justify-content: center;
 
-  gap: 20px;
+    flex-wrap: wrap;
 
-  margin-top: 30px;
+    gap: 22px;
+
+    margin-top: 30px;
 
 }
 
 .card {
 
-  background: #edf3f8;
+    background: white;
 
-  padding: 25px;
+    padding: 30px;
 
-  border-radius: 10px;
+    border-radius: 12px;
+
+    width: 270px;
+
+    box-shadow: 0 4px 15px #00000015;
 
 }
 
 .card h3 {
 
-  color: #087e8b;
+    color: #087eaa;
 
-  margin-bottom: 12px;
+    margin-bottom: 15px;
 
 }
+
+.card p {
+
+    font-size: 16px;
+
+}
+
+/* AKTIVITETET */
+
+#aktivitetet {
+
+    background: #eaf3fa;
+
+}
+
+/* PROJEKTET */
+
+#projektet {
+
+    background: white;
+
+}
+
+/* GALERIA */
+
+#galeria {
+
+    background: #eaf3fa;
+
+}
+
+/* KONTAKTI BLU */
+
+#kontakt {
+
+    background: #087eaa;
+
+    color: white;
+
+    padding: 65px 20px;
+
+}
+
+#kontakt h2,
+
+#kontakt h3,
+
+#kontakt p {
+
+    color: white;
+
+}
+
+#kontakt h3 {
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+}
+
+/* FUNDI */
 
 footer {
 
-  background: #102c4e;
+    background: #12345a;
 
-  color: white;
+    color: white;
 
-  text-align: center;
-
-  padding: 25px;
-
-  margin-top: 50px;
-
-}
-
-@media(max-width:600px) {
-
-  nav a {
-
-    display: inline-block;
-
-    margin: 8px;
-
-  }
-
-  .about {
+    text-align: center;
 
     padding: 25px;
 
-  }
+}
+
+/* TELEFONI */
+
+@media(max-width: 600px) {
+
+    header h1 {
+
+        font-size: 30px;
+
+    }
+
+    nav a {
+
+        margin: 8px;
+
+    }
+
+    .hero h2 {
+
+        font-size: 28px;
+
+    }
+
+    section {
+
+        padding: 40px 6%;
+
+    }
 
 }
 
@@ -214,121 +306,113 @@ footer {
 
 <header>
 
-  <h1>SHQK</h1>
+    <h1>SHQK</h1>
 
-  <h2>Gjimnazi "Fiqiri Dine"</h2>
-
-  <p>Shkolla Qendër Komunitare</p>
+    <p>Shkolla Qendër Komunitare</p>
 
 </header>
 
 <nav>
 
-  <a href="#about">Rreth nesh</a>
+    <a href="#rethnesh">Rreth nesh</a>
 
-  <a href="#activities">Aktivitetet</a>
+    <a href="#aktivitetet">Aktivitetet</a>
 
-  <a href="#news">Njoftime</a>
+    <a href="#projektet">Projektet</a>
 
-  <a href="#contact">Kontakt</a>
+    <a href="#galeria">Galeria</a>
+
+    <a href="#kontakt">Kontakt</a>
 
 </nav>
 
-<main>
+<div class="hero">
 
-<section class="about" id="about">
+    <h2>Mirë se vini në SHQK!</h2>
 
-  <h2>Rreth nesh</h2>
+    <p>Një hapësirë për dije, zhvillim, bashkëpunim dhe komunitet.</p>
 
-  <p>
+</div>
 
-    Mirë se vini në faqen zyrtare të SHQK-së,
+<section id="rethnesh">
 
-    pranë Gjimnazit "Fiqiri Dine".
+    <h2>Rreth nesh</h2>
 
-  </p>
+    <p>
 
-  <p>
+        SHQK është një hapësirë që synon të promovojë
 
-    Shkolla Qendër Komunitare është një hapësirë
+        edukimin, përfshirjen, zhvillimin personal
 
-    që promovon edukimin, bashkëpunimin,
+        dhe bashkëpunimin me komunitetin.
 
-    përfshirjen dhe zhvillimin e komunitetit.
+    </p>
 
-  </p>
+</section>
 
-  <p>
+<section id="aktivitetet">
 
-    Përmes aktiviteteve edukative, kulturore
+    <h2>Aktivitetet tona</h2>
 
-    dhe sociale, synojmë të krijojmë mundësi
+    <div class="cards">
 
-    të reja për nxënësit dhe komunitetin.
+        <div class="card">
 
-  </p>
+            <h3>Aktivitete edukative</h3>
 
-  <div class="cards">
+            <p>Veprimtari që mbështesin dijen dhe të nxënit.</p>
 
-    <div class="card">
+        </div>
 
-      <h3>Misioni ynë</h3>
+        <div class="card">
 
-      <p>Të mbështesim edukimin dhe zhvillimin e komunitetit.</p>
+            <h3>Aktivitete kulturore</h3>
+
+            <p>Promovimi i kulturës, traditës dhe krijimtarisë.</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Aktivitete komunitare</h3>
+
+            <p>Bashkëpunim dhe angazhim në komunitet.</p>
+
+        </div>
 
     </div>
 
-    <div class="card">
+</section>
 
-      <h3>Vizioni ynë</h3>
+<section id="projektet">
 
-      <p>Një komunitet aktiv, bashkëpunues dhe gjithëpërfshirës.</p>
+    <h2>Projektet</h2>
 
-    </div>
-
-    <div class="card">
-
-      <h3>Vlerat tona</h3>
-
-      <p>Dija, respekti, bashkëpunimi dhe përgjegjësia.</p>
-
-    </div>
-
-  </div>
+    <p>Këtu do të prezantohen projektet dhe nismat tona.</p>
 
 </section>
 
-<section id="activities" class="about" style="margin-top:30px">
+<section id="galeria">
 
-  <h2>Aktivitetet</h2>
+    <h2>Galeria</h2>
 
-  <p>Këtu do të publikojmë aktivitetet e SHQK-së.</p>
-
-</section>
-
-<section id="news" class="about" style="margin-top:30px">
-
-  <h2>Njoftime</h2>
-
-  <p>Këtu do të publikohen njoftimet e shkollës.</p>
+    <p>Këtu do të publikohen fotografitë nga aktivitetet e SHQK-së.</p>
 
 </section>
 
-<section id="contact" class="about" style="margin-top:30px">
+<section id="kontakt">
 
-  <h2>Kontakt</h2>
+    <h2>Kontakt</h2>
 
-  <p>Gjimnazi "Fiqiri Dine"</p>
+    <h3>Shkolla "Fiqiri Dine"</h3>
+
+    <p>Shkolla Qendër Komunitare</p>
 
 </section>
-
-</main>
 
 <footer>
 
-  <p>SHQK - Gjimnazi "Fiqiri Dine"</p>
-
-  <p>© 2026</p>
+    <p>© 2026 SHQK - Shkolla Qendër Komunitare</p>
 
 </footer>
 
