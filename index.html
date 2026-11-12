@@ -4,101 +4,47 @@
 
 <head>
 
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Faqja zyrtare e SHQK - Shkollë Qendër Komunitare.">
+<title>SHQK | Gjimnazi Fiqiri Dine</title>
 
-    <title>SHQK - Shkollë Qendër Komunitare</title>
+<style>
 
-    <style>
+*{box-sizing:border-box}
 
-        body {
+body{margin:0;font-family:Arial,sans-serif;color:#24344d;background:#f5f7fa}
 
-            margin: 0;
+header{background:#102d50;color:white;padding:35px 20px;text-align:center}
 
-            font-family: Arial, sans-serif;
+header h1{font-size:48px;margin:0;letter-spacing:4px}
 
-            background: #f4f6f9;
+header h2{font-size:23px;font-weight:400;margin:10px 0}
 
-            color: #263445;
+header p{color:#d5e4f2}
 
-        }
+nav{background:#087e8b;padding:17px;text-align:center}
 
-        header {
+nav a{color:white;text-decoration:none;margin:0 15px;font-weight:bold}
 
-            background: #12345a;
+.hero{text-align:center;padding:100px 20px;background:linear-gradient(135deg,#dceaf5,#ffffff)}
 
-            color: white;
+.hero h2{font-size:38px;color:#102d50}
 
-            padding: 30px;
+.hero p{font-size:18px}
 
-            text-align: center;
+section{max-width:1100px;margin:35px auto;padding:30px;background:white;border-radius:12px}
 
-        }
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
 
-        nav {
+.card{background:#edf3f8;padding:25px;border-radius:10px}
 
-            background: #087e8b;
+footer{background:#102d50;color:white;text-align:center;padding:25px;margin-top:40px}
 
-            padding: 15px;
+@media(max-width:600px){nav a{display:inline-block;margin:8px;font-size:14px}.hero h2{font-size:29px}}
 
-            text-align: center;
-
-        }
-
-        nav a {
-
-            color: white;
-
-            text-decoration: none;
-
-            margin: 15px;
-
-            font-weight: bold;
-
-        }
-
-        .hero {
-
-            text-align: center;
-
-            padding: 80px 20px;
-
-            background: white;
-
-        }
-
-        .hero h2 {
-
-            color: #12345a;
-
-            font-size: 32px;
-
-        }
-
-        .content {
-
-            padding: 35px;
-
-            text-align: center;
-
-        }
-
-        footer {
-
-            background: #12345a;
-
-            color: white;
-
-            text-align: center;
-
-            padding: 20px;
-
-        }
-
-    </style>
+</style>
 
 </head>
 
@@ -106,61 +52,81 @@
 
 <header>
 
-    <h1>SHQK</h1>
+<h1>SHQK</h1>
 
-    <p>Shkollë Qendër Komunitare</p>
+<h2>Gjimnazi “Fiqiri Dine”</h2>
+
+<p>Shkolla Qendër Komunitare</p>
 
 </header>
 
 <nav>
 
-    <a href="#home">Kreu</a>
+<a href="#home">Ballina</a>
 
-    <a href="#about">Rreth nesh</a>
+<a href="#about">Rreth nesh</a>
 
-    <a href="#activities">Aktivitetet</a>
+<a href="#activities">Aktivitetet</a>
 
-    <a href="#contact">Kontakt</a>
+<a href="#news">Njoftime</a>
+
+<a href="#contact">Kontakt</a>
 
 </nav>
 
-<section class="hero" id="home">
+<div class="hero" id="home">
 
-    <h2>Mirë se vini në SHQK!</h2>
+<h2>Mirë se vini në SHQK</h2>
 
-    <p>Një hapësirë për dije, bashkëpunim dhe zhvillim komunitar.</p>
+<p>Një shkollë e hapur për komunitetin, dijen dhe zhvillimin.</p>
 
-</section>
+</div>
 
-<section class="content" id="about">
+<section id="about">
 
-    <h2>Rreth nesh</h2>
+<h2>Rreth nesh</h2>
 
-    <p>SHQK është një hapësirë që promovon edukimin,
+<p>Gjimnazi “Fiqiri Dine” është një hapësirë për edukim,
 
-    përfshirjen dhe bashkëpunimin me komunitetin.</p>
-
-</section>
-
-<section class="content" id="activities">
-
-    <h2>Aktivitetet tona</h2>
-
-    <p>Aktivitete edukative, kulturore dhe komunitare.</p>
+bashkëpunim dhe zhvillim të komunitetit.</p>
 
 </section>
 
-<section class="content" id="contact">
+<section id="activities">
 
-    <h2>Kontakt</h2>
+<h2>Aktivitetet tona</h2>
 
-    <p>Na kontaktoni për më shumë informacion.</p>
+<div class="cards">
+
+<div class="card"><h3>Arsim dhe edukim</h3><p>Aktivitete edukative dhe kulturore.</p></div>
+
+<div class="card"><h3>Teknologji</h3><p>Zhvillimi i aftësive digjitale.</p></div>
+
+<div class="card"><h3>Komuniteti</h3><p>Projekte dhe bashkëpunime komunitare.</p></div>
+
+</div>
+
+</section>
+
+<section id="news">
+
+<h2>Njoftime</h2>
+
+<p>Informacione dhe njoftime nga SHQK.</p>
+
+</section>
+
+<section id="contact">
+
+<h2>Kontakt</h2>
+
+<p>Gjimnazi “Fiqiri Dine”</p>
 
 </section>
 
 <footer>
 
-    <p>© 2026 SHQK - Të gjitha të drejtat e rezervuara.</p>
+<p>© 2026 SHQK - Gjimnazi “Fiqiri Dine”</p>
 
 </footer>
 
